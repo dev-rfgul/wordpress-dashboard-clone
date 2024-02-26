@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="style.css " /> -->
+    <!-- <link rel="stylesheet" href="global.css" /> -->
+    <link rel="stylesheet" href="style-addNewPost.css">
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Hide all .list elements initially
+        $(".list").hide();
+
+        // Toggle visibility of corresponding .list element when .show-list is clicked
+        $(".show-list").click(function () {
+          $(this).next(".list").toggle(500);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-at"></i>
+        <i class="fas fa-mail-bulk"></i>
+      </div>
+      <form action="/">
+        <h1>Add New Post</h1>
+        <div class="info">
+          <input
+            class="fname"
+            type="text"
+            name="name"
+            placeholder="Title"
+          />
+          <input type="text" name="name" placeholder="Category" />
+       
+        </div>
+        <p>Type your Post</p>
+        <div>
+          <textarea rows="9"></textarea>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

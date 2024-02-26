@@ -1,0 +1,43 @@
+.section {
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  img{
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+  .col1 {
+    width: 10%;
+  }
+  .col2 {
+    width: 20%;
+  }
+  .col3 {
+    width: 30%;
+  }
+  .col4 {
+    width: 40%;
+  }
+  .col5 {
+    width: 50%;
+  }
+  .col6 {
+    width: 60%;
+  }
+  .col7 {
+    width: 70%;
+  }
+  .col8 {
+    width: 80%;
+  }
+  .col9 {
+    width: 90%;
+  }
